@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="<% author %>" />
     <meta name="generator" content="MinigalNano <% version %>" />
-    <title><% title %></title>
+    <title><% title %> | <% subtitle %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="alternate" type="application/rss+xml" title="<% title %>" href="rss.php" />
 
@@ -161,13 +161,18 @@
             position: fixed;
             bottom: 0;
             right: 0;
-            padding: 1rem 4rem;
+            padding: 1rem;
             background-color: #0fa9d1;
             color: #FFF;
             margin: .5%;
             border-radius: 4px;
             -webkit-box-shadow: 0px 0px 2px -1px #000;
             box-shadow: 0px 0px 2px -1px #000;
+        }
+
+        #backtop img {
+            color: #FFFFFF;
+            width: 2rem;
         }
 
         /*----lazyloading---*/
@@ -222,7 +227,7 @@
     <header id="top" role="banner">
         <div id="innerheader">
             <h1><a href="<% custom_link %>"><% title %></a></h1>
-            <h2><a href="<% gallery_root %>"><% subtitle %></a></h2>
+            <h2><a href="?"><% subtitle %></a></h2>
             <% messages %>
             <nav role="navigation"><% breadcrumb_navigation %></nav>
             <aside><% folder_comment %></aside>
@@ -234,7 +239,7 @@
         </ul>
     </main>
     <nav class="clear" role="navigation"><% page_navigation %></nav>
-    <a href="#top" id="backtop">top</a>
+    <a href="#top" id="backtop"><img src="images/scroll_top.svg" /></a>
     <footer role="contentinfo">
         <a href="https://github.com/sebsauvage/MinigalNano" title="Powered by MiniGal Nano" target="_blank">
             Powered by MiniGal Nano <% version %>
