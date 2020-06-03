@@ -13,6 +13,7 @@ $gallery_width = "80%"; // Gallery width. Eg: "500px" or "70%"
 $backgroundcolor = "white"; // This provides a quick way to change your gallerys background to suit your website. Use either main colors like "black", "white", "yellow" etc. Or HEX colors, eg. "#AAAAAA"
 $templatefile = "board"; // Template filename (must be placed in 'templates' folder)
 $title = "MiniGal Nano"; // Text to be displayed in browser titlebar
+$subtitle = "Gallery";
 $author = "John Doe";
 $folder_color = "black"; // Color of folder icons: blue / black / vista / purple / green / grey
 $sorting_folders = "name"; // Sort folders by: [name][date]
@@ -21,6 +22,7 @@ $sortdir_folders = SORT_ASC; // Sort direction of folders: SORT_ASC / SORT_DESC
 $sortdir_files = SORT_ASC; // Sort direction of files: SORT_ASC / SORT_DESC
 $lazyload = 1; // 0 is pagination, 1 is display all pictures on one page
 $skip_objects = array('aFolder', 'aFile.ext'); //Those files and folders will not be displayed (affects the page and the RSS feed)
+$custom_link = "https://example.com/";
 
 //LANGUAGE STRINGS
 $label_home = "Home"; // Name of home link in breadcrumb navigation
